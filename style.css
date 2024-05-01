@@ -2,4 +2,78 @@ body {
   margin: 0;
   display: flex;
   flex-direction: row;
+  color: white;
+  font-size: larger;
+}
+
+.playStation,
+.xBox {
+  display: inline-block;
+  /* display: flex; */
+  /* flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+  height: 100vh;
+  width: 50vw;
+  transition: 0.7s;
+}
+
+.playStation:hover {
+  width: 200vw;
+}
+
+.xBox:hover {
+  width: 200vw;
+}
+
+.cover1,
+.cover2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.cover1 {
+  background-color: rgb(130, 42, 213, 0.7);
+}
+
+.cover2 {
+  background-color: rgb(0, 0, 0, 0.7);
+}
+
+#playStation {
+  background-image: url("image/playstation-5-review-digitalfoundry-1604678146723.webp");
+  background-position: center;
+  background-size: cover;
+}
+
+#xBox {
+  background-image: url("image/5fd2732f-d2e4-42de-9a92-58803140f26c.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.mouseOver {
+  width: 75vw;
+}
+
+.mouseOff {
+  width: auto;
+}
+
+.btn {
+  border: 1px solid white;
+  padding: 10px 30px;
+  cursor: pointer;
+}
+
+.xBoxBtn:hover {
+  background-color: darkgreen;
+}
+
+.playStationBtn:hover {
+  background-color: darkblue;
 }
